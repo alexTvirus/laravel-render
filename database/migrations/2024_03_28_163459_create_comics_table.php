@@ -14,19 +14,19 @@ return new class extends Migration
         Schema::create('comics', function (Blueprint $table) {
             $table->id();
             $table->string('comic_code')->unique();
-            $table->string('comic_name');
-            $table->string('link_bg_color');
-            $table->string('link_avatar');
-            $table->string('link_comic_name');
-            $table->string('tranfer_color');
+            $table->string('comic_name')->nullable();
+            $table->string('link_bg_color')->nullable();
+            $table->string('link_avatar')->nullable();
+            $table->string('link_comic_name')->nullable();
+            $table->string('tranfer_color')->nullable();
 
-            $table->integer('total_view');
-            $table->integer('total_like');
+            $table->integer('total_view')->nullable();
+            $table->integer('total_like')->nullable();
 
-            $table->bigInteger('genre_id');
-            $table->bigInteger('artist_id');
-            $table->bigInteger('author_id');
-            $table->bigInteger('publisher_id');
+            $table->bigInteger('genre_id')->nullable();
+            $table->bigInteger('artist_id')->nullable();
+            $table->bigInteger('author_id')->nullable();
+            $table->bigInteger('publisher_id')->nullable();
 
             $table->bigInteger('created_by')->nullable();
             $table->bigInteger('updated_by')->nullable();
