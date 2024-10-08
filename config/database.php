@@ -51,12 +51,12 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'url' => "postgres://khotruyendb:Yjg4dQZpoySj95ISX9SJpewJPWt65dVk@dpg-cre6fhjv2p9s73cra5u0-a.singapore-postgres.render.com/khotruyendb_3dq7",
-            'host' => "dpg-cqqaei56l47c73ar1ot0-a.singapore-postgres.render.com",
+            'url' => "postgres://khotruyendb:38OOUNfYFKE4TuWAUpuFBnIgZKsV4XOE@dpg-ctj9edl2ng1s73bhn58g-a.singapore-postgres.render.com/khotruyendb_8lca",
+            'host' => "dpg-ctj9edl2ng1s73bhn58g-a.singapore-postgres.render.com",
             'port' => '5432',
-            'database' => 'khotruyendb_3dq7',
+            'database' => 'khotruyendb_8lca',
             'username' => 'khotruyendb',
-            'password' => 'Yjg4dQZpoySj95ISX9SJpewJPWt65dVk',
+            'password' => '38OOUNfYFKE4TuWAUpuFBnIgZKsV4XOE',
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
