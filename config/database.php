@@ -33,23 +33,20 @@ return [
     |
     */
 
-    'connections' => [
-        'pgsql' => [
+    'connections' => 'pgsql' => [
             'driver' => 'pgsql',
-            'url' => "postgres://khotruyendb:38OOUNfYFKE4TuWAUpuFBnIgZKsV4XOE@dpg-ctj9edl2ng1s73bhn58g-a.singapore-postgres.render.com/khotruyendb_8lca",
-            'host' => "dpg-ctj9edl2ng1s73bhn58g-a.singapore-postgres.render.com",
+            'url' => "postgres://khotruyendb:s9FtcVZmmApIgWfjdLB2wlFRbrLkEeto@dpg-cutgmdbtq21c73bf0osg-a.singapore-postgres.render.com/khotruyendb_grgl",
+            'host' => "dpg-cu69b4rtq21c7385ltt0-a.singapore-postgres.render.com",
             'port' => '5432',
-            'database' => 'khotruyendb_8lca',
+            'database' => 'khotruyendb_grgl',
             'username' => 'khotruyendb',
-            'password' => '38OOUNfYFKE4TuWAUpuFBnIgZKsV4XOE',
+            'password' => 's9FtcVZmmApIgWfjdLB2wlFRbrLkEeto',
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
             'search_path' => 'public',
             'sslmode' => 'prefer',
-        ]
-
-    ],
+        ],
 
     /*
     |--------------------------------------------------------------------------
