@@ -24,4 +24,6 @@ RUN apk update && apk add --no-cache openjdk11 coreutils
 ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 ENV PATH="$JAVA_HOME/bin:${PATH}"
 
+COPY javar /javar
+
 CMD ["/start.sh"]

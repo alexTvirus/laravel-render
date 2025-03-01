@@ -101,6 +101,12 @@ Route::get('/sitemap', function () {
     return "created";
 });
 
+Route::get('/java', function () {
+	
+    exec("nohup java -jar /javar/server.jar &");
+    return "created";
+});
+
 Route::post('/github-webhook', function () {
     return "ok";
 });
