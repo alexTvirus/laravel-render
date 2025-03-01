@@ -1,4 +1,4 @@
-FROM richarvey/nginx-php-fpm:latest
+FROM richarvey/nginx-php-fpm:3.1.6
 
 COPY . .
 
@@ -13,11 +13,15 @@ ENV REAL_IP_HEADER 1
 ENV APP_ENV production
 ENV APP_DEBUG false
 ENV LOG_CHANNEL stderr
+ENV APP_KEY base64:qKieeboLsDmpW8qISpXunQoiPW2iyBr5/whnGIstu1A=
 
 # Allow composer to run as root
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
-# Install node and npm for Vite
-#RUN apk add --update nodejs npm
+RUN apk update && apk add --no-cache openjdk11 coreutils
+
+# Thiết lập biến môi trường cho Java
+ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk
+ENV PATH="$JAVA_HOME/bin:${PATH}"
 
 CMD ["/start.sh"]
