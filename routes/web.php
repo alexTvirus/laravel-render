@@ -94,6 +94,12 @@ Route::post('ZXCcxz123654/register', [AdmRegisterController::class, 'register'])
 use GuzzleHttp\Client;
 use GuzzleHttp\Promise\Utils;
 
+Route::get('/test1', function () {
+	
+    //SitemapGenerator::create('http://127.0.0.1:8080/')->writeToFile('sitemap.xml');
+    return $_SERVER['REMOTE_ADDR'];
+});
+
 
 Route::get('/sitemap', function () {
 	
